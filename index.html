@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="google-site-verification" content="ytlrslZztYHPcGNV3T4fRF1Ntum68hpQmO7uUUU6R6w" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>Student Expense Tracker</title>
     <style>
          :root {
@@ -24,7 +24,7 @@
         }
         
         @media(prefers-color-scheme:dark) {
-             :root:not([data-theme=light]) {
+            :root:not([data-theme=light]) {
                 --bg: #0B1120;
                 --card: #121B30;
                 --pri: #818CF8;
@@ -38,7 +38,7 @@
             }
         }
         
-         :root[data-theme=dark] {
+        :root[data-theme=dark] {
             --bg: #0B1120;
             --card: #121B30;
             --pri: #818CF8;
@@ -74,7 +74,7 @@
             color: inherit
         }
         
-         :focus-visible {
+        :focus-visible {
             outline: 2px solid var(--pri);
             outline-offset: 2px
         }
@@ -630,7 +630,7 @@
                 n: 15
             };
         // ---------- helpers ----------
-        const esc = s => String(s ? ? '').replace(/[&<>"']/g, c => ({
+        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({
             '&': '&amp;',
             '<': '&lt;',
             '>': '&gt;',
